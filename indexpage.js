@@ -1,5 +1,5 @@
-import { getBooks } from './fetchBooks.js';
-import { addFavorite } from './favorites.js';
+import { getBooks } from "./fetchbook.js";
+import { addFavorite } from "./";
 
 const booksGrid = document.getElementById('books-grid');
 const searchInput = document.getElementById('search-input');
