@@ -1,5 +1,5 @@
 import { getBooks } from "./fetchbook.js";
-import { addFavorite } from "./";
+import { addFavorite } from "./favorites.js";
 
 const booksGrid = document.getElementById('books-grid');
 const searchInput = document.getElementById('search-input');
@@ -25,7 +25,7 @@ function renderBooks(books) {
       <div class="p-4">
         <h4 class="font-bold text-lg mb-1">${book.title}</h4>
         <p class="text-gray-600 text-sm">${book.author}</p>
-        <button class="mt-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+        <button class="mt-2 bg-gray-300 text-white px-3 py-1 rounded hover:bg-gray-800 shadow">
           Add to Favorites
         </button>
       </div>
